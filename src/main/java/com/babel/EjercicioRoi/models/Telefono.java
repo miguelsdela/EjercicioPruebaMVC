@@ -1,37 +1,20 @@
 package com.babel.EjercicioRoi.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.validation.constraints.NotNull;
+
+@AllArgsConstructor
+@Getter
+@Setter
 public class Telefono {
+    @NotNull
     private int telefono_Id;
+    @NotNull
     private int persona_Id;
+    @NotNull
     private String telefono;
 
-    public Telefono(int telefono_Id, int persona_Id, String telefono) {
-        this.telefono_Id = telefono_Id;
-        this.persona_Id = persona_Id;
-        this.telefono = telefono;
-    }
-
-    public int getTelefono_Id() {
-        return telefono_Id;
-    }
-
-    public void setTelefono_Id(int telefono_Id) {
-        this.telefono_Id = telefono_Id;
-    }
-
-    public int getPersona_Id() {
-        return persona_Id;
-    }
-
-    public void setPersona_Id(int persona_Id) {
-        this.persona_Id = persona_Id;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
 }
