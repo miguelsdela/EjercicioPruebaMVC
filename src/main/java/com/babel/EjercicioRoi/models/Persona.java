@@ -2,6 +2,7 @@ package com.babel.EjercicioRoi.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.lang.NonNull;
 
@@ -11,9 +12,10 @@ import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Setter
 @Getter
-@AllArgsConstructor
 public class Persona {
     @NotNull
     private int persona_id;

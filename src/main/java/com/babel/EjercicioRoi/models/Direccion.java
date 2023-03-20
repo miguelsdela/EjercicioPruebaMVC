@@ -13,6 +13,8 @@ import javax.validation.constraints.NotNull;
 public class Direccion {
 
     @NotNull
+    private int direccion_id;
+    @NotNull
     private int tipo_via_id;
     @NotNull
     private String nombre_calle;
